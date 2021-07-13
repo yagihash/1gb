@@ -1,0 +1,8 @@
+{
+  "name": "1gb",
+  "version": "1.0.0",
+  "description": "エキサイトモバイルで1GB追加するやつ",
+  "repository": "https://github.com/yagihash/1gb",
+  "author": "Yu YAGIHASHI <yagihashoooooo@gmail.com>",
+  "license": "MIT"
+}
