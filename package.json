@@ -4,5 +4,8 @@
   "description": "エキサイトモバイルで1GB追加するやつ",
   "repository": "https://github.com/yagihash/1gb",
   "author": "Yu YAGIHASHI <yagihashoooooo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^10.1.0"
+  }
 }
