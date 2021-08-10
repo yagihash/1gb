@@ -23,6 +23,8 @@ const loop = parseInt(process.env.LOOP) || 1;
     await page.waitForSelector('input[name=_apply]');
     await page.click('input[name=_apply]');
 
+    await page.waitForSlector('body > div.container > div:nth-child(4) > a');
+
     await page.goto('https://bb.excite.co.jp/exmb/coupon/charge/');
   }
 
