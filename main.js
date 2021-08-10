@@ -17,15 +17,16 @@ const loop = parseInt(process.env.LOOP) || 1;
   await page.click('button[name=_submit]');
 
   for (let i = 0; i < loop; i++) {
+    await page.goto('https://bb.excite.co.jp/exmb/coupon/charge/');
+
     await page.waitForSelector('input[name=_confirm');
     await page.click('input[name=_confirm');
 
     await page.waitForSelector('input[name=_apply]');
     await page.click('input[name=_apply]');
 
-    await page.waitForSlector('body > div.container > div:nth-child(4) > a');
-
-    await page.goto('https://bb.excite.co.jp/exmb/coupon/charge/');
+    await page.waitForNavigation();
+    await page.reload();
   }
 
   await browser.close();
